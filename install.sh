@@ -34,9 +34,9 @@ wget "https://fastdl.mongodb.org/linux/mongodb-linux-${ARCH_VERSION}-${MONGODB_V
 tar -zxvf mongodb-linux-${ARCH_VERSION}-${MONGODB_VERSION}.tgz
 rm mongodb-linux-${ARCH_VERSION}-${MONGODB_VERSION}.tgz
 mv mongodb-linux-${ARCH_VERSION}-${MONGODB_VERSION} $HOME/opt/mongodb
-export PATH="$HOME/opt/mongodb/bin:$PATH"
 
 ## Get wekan release
+cd $HOME/wekan
 wget "https://github.com/wekan/wekan/releases/download/v${WEKAN_VERSION}/wekan-${WEKAN_VERSION}.tar.gz"
 # extracts into bundle directory
 tar xvzf wekan-${WEKAN_VERSION}.tar.gz

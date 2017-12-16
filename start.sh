@@ -9,8 +9,8 @@ export ROOT_URL="http://localhost:$PORT"
 export MONGO_URL="mongodb://localhost:27017"
 
 ## Start mongodb
-mongod --dbpath $HOME/wekan/data/db &
+$HOME/opt/mongodb/bin/mongod --dbpath $HOME/wekan/data/db &
 
 ## Start wekan
-node $HOME/wekan/bundle/main.js &
+$HOME/bin/node $HOME/wekan/bundle/main.js &
 
