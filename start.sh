@@ -1,10 +1,12 @@
 #!/bin/bash
-# START APP
+# This script sets mandatory config, starts mongodb and wekan
 export MONGO_URL="mongodb://localhost:27017"
 export PORT=60835
 export ROOT_URL="http://localhost:$PORT"
-# # Start mongodb
+
+## Start mongodb
 mongod --dbpath $HOME/wekan/data/db &
-cd ~/wekan/bundle
-node main.js &
+
+## Start wekan
+node ~/wekan/bundle/main.js &
 
