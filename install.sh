@@ -13,7 +13,7 @@ export ARCH_VERSION="$(uname -m)"
 
 mkdir -p ~/bin
 mkdir -p ~/opt
-# Directory for the
+# This is where the mongo databases are persisted to. Backup this directory. Used in the start.sh script.
 mkdir -p $HOME/wekan/data/db
 
 ## Install Node
